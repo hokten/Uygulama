@@ -1,0 +1,36 @@
+﻿@model Uygulama.Models.DavetiyeCevabi
+@{
+ Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width=device-width" />
+ <title>Davetiye Formu</title>
+</head>
+<body>
+ <form asp-action="DavetiyeCevabi" method="post">
+ <div>
+ <label asp-for="AdiSoyadi">Adı Soyadı:</label>
+ <input asp-for="AdiSoyadi" />
+ </div>
+ <div>
+ <label asp-for="EPosta">E-Postanız:</label>
+ <input asp-for="EPosta" />
+ </div>
+ <div>
+ <label asp-for="Telefon">Telefon:</label>
+ <input asp-for="Telefon" />
+ </div>
+ <div>
+ <label asp-for="KatilimDurumu">Katılacak mısınız?</label>
+ <select asp-for="KatilimDurumu">
+ <option value="">Bir Seçenek Seçin</option>
+ <option value="true">Evet</option>
+ <option value="false">Hayır</option>
+ </select>
+ </div>
+ <button type="submit">Gönder</button>
+ </form>
+</body>
+</html>
