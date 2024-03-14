@@ -22,7 +22,13 @@ public class HomeController : Controller
     {
         return View();
     }
+	[HttpGet]
 	public IActionResult DavetiyeCevabi()
+    {
+        return View();
+    }
+	[HttpPost]
+	public IActionResult DavetiyeCevabi(DavetiyeCevabi formdangelencevap)
     {
         return View();
     }
