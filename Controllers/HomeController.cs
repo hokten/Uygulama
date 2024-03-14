@@ -30,7 +30,7 @@ public class HomeController : Controller
 	[HttpPost]
 	public IActionResult DavetiyeCevabi(DavetiyeCevabi formdangelencevap)
     {
-        return View();
+        return View("Thanks", formdangelencevap);
     }
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()

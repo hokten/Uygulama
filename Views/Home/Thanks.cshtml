@@ -1,0 +1,22 @@
+﻿@model Uygulama.Models.DavetiyeCevabi
+@{
+	Layout = null;
+}
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width" />
+			<title>Thanks</title>
+		</head>
+	<body>
+	<div>
+		<h1>Tesekkürler, @Model?.AdiSoyadi!</h1>
+		@if (Model?.KatilimDurumu == true) {
+			@:Katılacağınıza çok memnun olduk.
+		} else {
+			@:Katılamayacağınıza çok üzüldük
+		}
+</div>
+Kimlerin katıldığını görmek için <a asp-action="KatilanlariListele">tıklayınız</a>.
+</body>
+</html>
