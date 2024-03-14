@@ -30,8 +30,14 @@ public class HomeController : Controller
 	[HttpPost]
 	public IActionResult DavetiyeCevabi(DavetiyeCevabi formdangelencevap)
     {
+		Repository.cevapEkle(formdangelencevap);
         return View("Thanks", formdangelencevap);
     }
+	public IActionResult KatilanlariListele()
+    {
+        return View(Repository.Cevaplar.Where(r => r.KatilimDurumu == true));
+    }
+	
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

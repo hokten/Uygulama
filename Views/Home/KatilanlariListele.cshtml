@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Uygulama.Models.DavetiyeCevabi>
+@{
+Layout = null;
+}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width" />
+		<title>Responses</title>
+	</head>
+	<body>
+		<h2>Katılanların Listesi</h2>
+		<table>
+			<thead>
+				<tr><th>Adı Soyadı</th><th>E-Postası</th><th>Telefonu</th></tr>
+			</thead>
+			<tbody>
+			@foreach (Uygulama.Models.DavetiyeCevabi r in Model!) {
+				<tr>
+					<td>@r.AdiSoyadi</td>
+					<td>@r.EPosta</td>
+					<td>@r.Telefon</td>
+				</tr>
+			}
+			</tbody>
+	</table>
+</body>
+</html>
