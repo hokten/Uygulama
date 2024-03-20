@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Uygulama")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+82fa97406561a3536ea89c7ef3d67fa5c15ff8a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a76167c51a4dfc0233b016f772fea7a6235600b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Uygulama")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Uygulama")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

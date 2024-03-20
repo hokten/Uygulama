@@ -10,6 +10,8 @@
 </head>
 <body>
  <form asp-action="DavetiyeCevabi" method="post">
+ <div asp-validation-summary="All"></div>
+ 
  <div>
  <label asp-for="AdiSoyadi">Adı Soyadı:</label>
  <input asp-for="AdiSoyadi" />
