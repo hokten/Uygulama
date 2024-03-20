@@ -8,7 +8,7 @@ public class DavetiyeCevabi
 	public string? AdiSoyadi { get; set; }
 	
 	[Required(ErrorMessage="E-Posta alanına bir veri girmelisiniz.")]
-	[EmailAdress]
+	[EmailAddress]
 	public string? EPosta { get; set; }
 	
 	[Required(ErrorMessage="Telefon alanına bir veri girmelisiniz.")]

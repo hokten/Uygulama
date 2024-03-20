@@ -35,7 +35,7 @@ public class HomeController : Controller
 			return View("Thanks", formdangelencevap);
 		}
 		else {
-			return View()
+			return View();
 		}
     }
 	public IActionResult KatilanlariListele()
