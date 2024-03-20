@@ -30,8 +30,13 @@ public class HomeController : Controller
 	[HttpPost]
 	public IActionResult DavetiyeCevabi(DavetiyeCevabi formdangelencevap)
     {
-		Repository.cevapEkle(formdangelencevap);
-        return View("Thanks", formdangelencevap);
+		if(ModelState.IsValid) {
+			Repository.cevapEkle(formdangelencevap);
+			return View("Thanks", formdangelencevap);
+		}
+		else {
+			return View()
+		}
     }
 	public IActionResult KatilanlariListele()
     {
